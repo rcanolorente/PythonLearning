@@ -1,4 +1,6 @@
 from random import randint
+import sys
+
 n=randint(0,20)
 print(n)
 textguess=(input('Guess the number. you have 3 tries: '))
@@ -16,10 +18,10 @@ while Guess != int(n):
         count += 1
     elif count == 3:
         print('That\'s not it. End of the game!')
-        exit()
+        sys.exit()
     else:
         print('somethign went wrong!')
-        exit()
+        sys.exit()
 
 
 
