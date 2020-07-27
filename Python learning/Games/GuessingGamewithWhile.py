@@ -1,12 +1,13 @@
 from random import randint
 import sys
 
-n=randint(0,20)
+n=randint(1,20)
 print(n)
-textguess=(input('Guess the number. you have 3 tries: '))
+textguess=(input('I am thinking of a number between 1 and 20. you have 3 tries: '))
 Guess=int(textguess)
 print(Guess)
 count=1
+
 while Guess != int(n):
     if Guess>n and count < 3  :
         print('less')
