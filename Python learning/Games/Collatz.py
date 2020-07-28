@@ -3,10 +3,13 @@ def collatz (number):
     #even
         print('even')
         print(number//2)
+        return number // 2
     else:
         #uneven
         print('uneven')
-        print(3 * number + 1)
+        result = 3 * number + 1
+        print(result)
+        return result
 
 z= int(input('Please enter number: '))
 
@@ -15,6 +18,6 @@ while collatz(z) != 1:
     z = int(input('Please enter number: '))
 
 
-print('nice')
+print('Well Done!')
 
 
