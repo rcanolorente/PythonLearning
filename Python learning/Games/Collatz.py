@@ -7,11 +7,12 @@ def collatz (number):
         #uneven
         return 3 * number + 1
 
-
-z= int(input('Please enter number: '))
-
-while z != 1:
-    z=collatz(int(z))
+try:
+    z= int(input('Please enter number: '))
+    while z != 1:
+        z=collatz(int(z))
+except:
+    print('Value Error. Please enter integer.')
 
 #while collatz(z) != 1:
     #z = int(input())
