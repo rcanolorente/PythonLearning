@@ -4,6 +4,7 @@ name = 'Zophie'
 print(name[0])
 print(name[-2])
 print(name[0:4])
+print('{:.5}'.format('xylophone'))
 
 print('Zo' in name)
 print('z' in name)
