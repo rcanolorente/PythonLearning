@@ -18,7 +18,7 @@ while Guess != int(n):
         Guess = int(input('That\'s not it. Try Again: '))
         count += 1
     elif count == 3:
-        print('That\'s not it. End of the game!')
+        print(f'That\'s not it. The answer was {n} .End of the game!')
         sys.exit()
     else:
         print('somethign went wrong!')

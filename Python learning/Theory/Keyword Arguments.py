@@ -12,3 +12,6 @@ print('cats', 'dogs', 'mice')
 #But you could replace the default separating string by passing
 # the sep keyword argument. Enter the following into the interactive shell:
 print('cats', 'dogs', 'mice', sep=',')
+
+x=5
+print(f'I love {x}'  )
