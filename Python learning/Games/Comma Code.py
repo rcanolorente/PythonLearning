@@ -3,7 +3,10 @@ i = -1
 
 print((len(spam)))
 
-spam.insert(3, 'and')
-for i in range(len(spam)):
-    print(spam[i], end=', ')
+def MakeList(words):
+    for i in range(len(words)-2):
+        print(words[i], end=',')
+    print(words[-2], 'and', words[-1])
 
+
+MakeList(spam)
