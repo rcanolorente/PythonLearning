@@ -1,4 +1,4 @@
-inventory = {'arrow': 12, 'gold coin': 42, 'rope': 1, 'torch': 6, 'dagger': 1}
+inventory = {'arrow': 12, 'gold coin': 42, 'rope': 1, 'torch': 6, 'dagger': 1} #had the numbers in strings so it was giving me a TypeError
 
 def displayInventory(inventory):
     print("Inventory:")
@@ -14,7 +14,7 @@ displayInventory(inventory)
 def additems(inventory, newitems):
     for item in newitems:
         inventory.setdefault(item, 0)
-        inventory[item] += 1 #need to add item
+        inventory[item] += 1 #need to add [item]
 
 
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
