@@ -22,3 +22,22 @@ for i in spam.items():
 #Checking Whether a Key or Value Exists in a Dictionary
 print('color' in spam.keys())
 
+#It’s tedious to check whether a key exists in a dictionary before accessing that key’s value.
+# Fortunately, dictionaries have a get() method that takes two arguments:
+# the key of the value to retrieve and a fallback value to return if that key does not exist.
+
+picnicItems = {'apples': 5, 'cups': 2}
+print('I am bringing ' + str(picnicItems.get('cups', 0)) + ' cups.')
+print( 'I am bringing ' + str(picnicItems.get('eggs', 0)) + ' eggs.')
+
+# Because there is no 'eggs' key in the picnicItems dictionary, the default value 0 is returned by the get() method.
+# Without using get(), the code would have caused an error message, such as in the following example:
+
+spam = {'name': 'Pooka', 'age': 5}
+spam.setdefault('color', 'black')
+print(spam)
+spam.setdefault('color', 'white') #When spam.setdefault('color', 'white') is called next, t
+# he value for that key is not changed to 'white' because spam already has a key named 'color'.
+print(spam)
+
+spam = { 'cat' : 'soft'}
